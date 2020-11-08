@@ -1,0 +1,71 @@
+.annonce_container *{
+  box-sizing: border-box;
+}
+.annonce_container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden
+}
+.annonce_container > *{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.annonce_container .cover img{
+  width: 100%;
+  height: 100%
+}
+.annonce_container .description{
+  background-color:rgba(57, 62, 70, 0.5);
+  color: #eeeeee;
+  height: 20%;
+  bottom: 0;
+  padding: 15px;
+  text-align: center;
+  transition: .5s all ease-in-out
+}
+.annonce_container:hover .description{
+  height: 100%
+}
+.annonce_container:hover .description > .header, .annonce_container:hover .description > .body, .annonce_container:hover .description > .footer{
+  opacity: 100%
+}
+.annonce_container .description .header{
+  height: 15%;
+  opacity: 60%;
+  transition: .5s all ease-in-out
+}
+.annonce_container .description .body{
+  height: 70%;
+  width: 75%;
+  margin: 0 auto;
+  overflow-y: hidden;
+  opacity: 0;
+  transition: .5s all ease-in-out
+}
+.annonce_container .description .footer{
+  height: 15%;
+  padding-top: 20px;
+  opacity: 0;
+  transition: .5s all ease-in-out
+}
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Declare heights because of positioning of img element */
+.slide-annonce{
+  height: 100%;
+}
+.slide-annonce .carousel-item {
+  height: 400px;
+}
+
+.slide-annonce .carousel-indicators{
+  bottom: -10px
+}
