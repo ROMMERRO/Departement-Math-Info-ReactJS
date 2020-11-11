@@ -1,6 +1,7 @@
 import React from 'react';
 import AvisWidget from '../avisWidget/avisWidget.js';
 import AvisCard from '../avisCard/avisCard.js';
+import './avisContainer.css'
 
 class AvisContainer extends React.Component{
     constructor(){
@@ -15,7 +16,7 @@ class AvisContainer extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div className="avisConatiner">
                 {
                     this.state.avisCard === true 
                     ?

@@ -3,22 +3,24 @@ import '../../bootstrap/css/bootstrap.min.css'
 import './nav.css'
 import logo from './dark.png'
 import '../../fontawesome/css/all.min.css'
-import $ from 'jquery';
 
 
 
 
-class Navbar extends Component {
+const Navbar =({LoginClick,wgo})=> {
 
-  
-  render(){
     return(
       
       <div className="navbar_container">
-          <div className="cover">
-            <img src={logo} alt="logo"/>
-          </div>
-
+         {
+              wgo != "Login"
+              ?
+              <div className="cover">
+                   <img src={logo} alt="logo"/>
+              </div>
+              :
+              <div></div>
+            }
           <nav className="navbar navbar-dark navbar-expand" id="navbar">
             <div className="container">
 
@@ -57,7 +59,16 @@ class Navbar extends Component {
                     </form>
                   </li>
                 </ul>
-                <button className="loginButton" onclick="show_dialog(login)"><i className="fas fa-user-tie"></i></button>
+                <button className="loginButton"  onClick={()=>{LoginClick()}}>
+                {
+                  wgo != "Login"
+                  ?
+                  <i className="fas fa-user-tie"></i>
+                  :
+                  <div></div>
+                }
+                </button>
+                
               </div>
             </div>
           </nav>
@@ -66,5 +77,4 @@ class Navbar extends Component {
 
     );
   }
-}
 export default Navbar;

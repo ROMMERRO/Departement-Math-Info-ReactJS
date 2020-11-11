@@ -1,10 +1,21 @@
-.ancbx{
-    width: 60%;
-    height: auto;
-    margin: 150px auto;
+.home{
+    display: grid;
+    grid-template-columns: 400px 460px 460px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:0px;
 }
-.sbbx{
-    width: 30%;
-    height: auto;
-    /* margin: 150px auto; */
+
+.home #about{
+    grid-column: 1 / 4;
+    grid-row: 3;
+    background-color: gray;
+}
+#footer{
+    background-color:blue;
+    height: 200px;
+    margin-bottom: auto;
+}
+
+.buffer{
+    height: 15px;
 }

@@ -14,7 +14,7 @@ const AvisWidget = ({displayAvis}) =>{
                                 <p className="date"><b>02-05-2020</b></p>
                             </div>
                         </div>
-            </div>
+                    </div>
     )
    
 }
