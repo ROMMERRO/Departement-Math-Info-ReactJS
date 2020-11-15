@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import {NavLink} from 'react-router-dom';
-
+import React, { Component } from 'react'
+import {NavLink, Link} from 'react-router-dom'
 import '../../bootstrap/css/bootstrap.min.css'
-import './nav.css'
-import logo from './dark.png'
 import '../../fontawesome/css/all.min.css'
+import './nav.css'
 import $ from 'jquery';
+import logo from './dark.png'
 
 
 class Navbar extends Component {
@@ -45,15 +44,7 @@ class Navbar extends Component {
     return(
 
       <div className="navbar_container">
-        {
-          this.props.wgo != "Login"
-          ?
-          <div className="cover">
-                <img src={logo} alt="logo"/>
-          </div>
-          :
-          <div></div>
-        }
+        <div className="cover"><img src={logo} alt="logo"/></div>
         <nav className="navbar navbar-dark navbar-expand" id="navbar">
           <div className="container">
             <div className="collapse navbar-collapse" id="menu">
@@ -79,18 +70,14 @@ class Navbar extends Component {
                       <li className="nav-item" id="iAbout">
                         <a id="lAbout" className="sc nav-link">About</a>
                       </li>
-                      <span className="nav-link" >Contact</span>
+                      <NavLink to="/Contact" className="nav-link" >Contact</NavLink>
                     </ul>
                 </li>
               </ul>
-              <button className="loginButton"  onClick={this.props.LoginClick}>
-                {
-                  this.props.wgo != "Login"
-                  ?
-                  <i className="fas fa-user-tie"></i>
-                  :
-                  <div></div>
-                }
+              <button title="login as prof" className="loginButton">
+              <Link to="/Login" style={{textDecoration:"none",color:"inherit"}}>
+                <i className="fas fa-user-tie" />
+              </Link>
               </button>
             </div>
           </div>
