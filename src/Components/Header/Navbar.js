@@ -51,7 +51,7 @@ class Navbar extends Component {
               <ul className="us parentNav mx-auto">
                 <li className="us">
                     <ul className="nav navbar-nav mx-auto">
-                      <li className="nav-item ACTIVE" id="iHome">
+                      <li className="nav-item" id="iHome">
                         <NavLink className="sc nav-link" exact to="/">Home</NavLink>
                       </li>
                       <li className="nav-item dropdown" id="flr">

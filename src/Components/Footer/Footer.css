@@ -1,0 +1,163 @@
+.footer_container *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    line-height: 1.1;
+}
+
+.footer_container{
+    background-color: #222831;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    position: absolute;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_container .left-box{
+    text-align: center;
+    right: 50%;
+}
+
+.footer_container .fa-chevron-circle-up{
+    position: absolute;
+    left: 90%;
+    top: 25px;
+    color: #0092ca;
+    font-size: 30px;
+    animation: gotop .7s infinite ease-in-out alternate
+}
+
+.footer_container .fa-chevron-circle-up:hover{
+    color: #0092ca;
+    animation: none
+}
+
+.footer_container .social-media  i{
+    background-color: #EEEEEE;
+    color: #393e46;
+    margin: 20px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    line-height: 30px;
+    font-size: 16px
+}
+
+.footer_container img{
+    width: 150px;
+    margin: 5px;
+}
+
+.footer_container h2{
+    color: #0092ca;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold
+}
+
+.footer_container hr{
+    width: 50px;
+    height: 2px;
+    border: 1px solid #0092ca;
+    border-radius: 25%
+}
+
+.footer_container .fa-twitter:hover{
+    background-color: #1da1f2;
+    color: white;
+}
+
+.footer_container .fa-facebook-f:hover{
+    color: white;
+    background-color: #4267B2;
+}
+
+.footer_container .fa-youtube:hover{
+    background-color: red;
+    color: white;
+}
+
+.footer_container .fa-google-plus-g:hover{
+    background-color: red;
+    color: white;
+}
+
+.footer_container .right-box{
+    margin-left: 50px;
+}
+
+.footer_container .local{
+    margin-top: 20px;
+}
+
+.footer_container .local i{
+    color: #EEEEEE;
+    margin-right: 15px;
+}
+
+.footer_container .phone i{
+    color: #EEEEEE;
+    margin: 10px 10px 0 0;
+}
+
+.footer_container .fax i{
+    color: #EEEEEE;
+    margin: 10px 10px 0 0;
+}
+
+.footer_container .web-site i{
+    color: #EEEEEE;
+    margin: 10px 10px 20px 0;
+}
+
+.footer_container span{
+    color: #EEEEEE;
+    font: outline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer_container .bottom-box{
+    width: 100%;
+    height: 30px;
+    background-color: #0092ca;
+    bottom: -30px;
+    position: absolute;
+    text-align: center;
+}
+
+.footer_container h3{
+    color: #393e46;
+    font-family: serif;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.footer_container a{
+  text-decoration: none
+}
+
+
+
+@keyframes gotop {
+  0%{
+    color: #eeeeee;
+    opacity: 0;
+    top: 30px;
+  }
+  100%{
+    color: #0092ca;
+    opacity: 100%;
+    top: 20px;
+  }
+}

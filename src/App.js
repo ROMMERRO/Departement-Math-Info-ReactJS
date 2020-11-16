@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Header/Navbar'
+import Footer from './Components/Footer/Footer'
 import Login from './Components/Login/Login'
 import Home from './Components/Home/Home'
 import Filiere from './Components/Filiere/Filiere'
@@ -16,11 +17,12 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <Navbar/>
-                <Route exact path="/" component={Home} />
+                <Route exact path={"/"} component={Home} />
                 <Route path="/Filiere" component={Filiere} />
                 <Route path="/Avis" component={Avis} />
                 <Route path="/Contact" component={Contact} />
                 <Route path="/Login" component={Login} />
+                <Footer/>
             </BrowserRouter>
         );
     }

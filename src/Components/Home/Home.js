@@ -6,7 +6,12 @@ import AvisContainer from '../Avis/avisContainer/avisContainer'
 
 
 class Home extends Component {
-
+  componentDidMount() {
+    document.getElementById('iHome').classList.add("active");
+  }
+  componentWillUnmount() {
+    document.getElementById('iHome').classList.remove("active");
+  }
   render() {
 
     return (
