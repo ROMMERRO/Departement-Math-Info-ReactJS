@@ -13,8 +13,8 @@ class Footer extends Component {
             <div className="footer_container">
                 <div className="left-box">
                     <a href="#top" className="sc"><i className="fas fa-chevron-circle-up"></i></a>
-                    <img src={logo}/>
-                    <img src={fpt}/>
+                    <img src={logo} alt="logo"/>
+                    <img src={fpt} alt="fpt"/>
                     <div className="social-media">
                         <a href="https://twitter.com" target="blank"> <i className="fab fa-twitter"></i> </a>
                         <a href="https://facebook.com/siteFPT/" target="blank"> <i className="fab fa-facebook-f"></i> </a>

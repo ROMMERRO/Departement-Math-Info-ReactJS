@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './sideBar.css'
 import logo from './chefDep.jpg';
 
-const SideBar = () =>{
-  return(
+class SideBar extends Component {
+
+  componentDidMount() {
+    let
+      tag = document.getElementsByClassName('tag'),
+      act = document.getElementsByClassName('act_item');
+
+    for (var i = 0; i < 7; i++) {
+      let
+        wTag = parseInt(getComputedStyle(tag[i]).width),
+        wAct = parseInt(getComputedStyle(act[i]).width),
+        left = (100 - (wTag * 100 / wAct)) / 2;
+      tag[i].style.left = "" + left + "%";
+    }
+  }
+
+  render() {
+    return(
       <div className="sidebar_container">
         <section className="actualite">
             <h3 className="act_header">Actualitées</h3>
@@ -60,7 +76,9 @@ const SideBar = () =>{
         </section>
       </div>
 
-  )
+    )
+  }
+  
 }
 
 export default SideBar;

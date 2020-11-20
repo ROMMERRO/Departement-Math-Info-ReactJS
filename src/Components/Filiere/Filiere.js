@@ -9,10 +9,10 @@ import img2 from './image2.jpg'
 class Filiere extends Component {
 
   componentDidMount() {
-      document.getElementById('flr').classList.add("active");
+      document.getElementById('flr').classList.add("active")
     }
     componentWillUnmount() {
-      document.getElementById('flr').classList.remove("active");
+      document.getElementById('flr').classList.remove("active")
     }
   render() {
       return (
@@ -23,7 +23,7 @@ class Filiere extends Component {
                 <img src={logo} alt="Departement Math Informatique" width="40%" style={{marginTop: "15px"}}/>
               </div>
               <h5><span className="badge badge-pill" id="sl">Licence professionelle</span></h5>
-              <h5><span className="badge badge-pill" id="sr">Génie Informatique</span></h5>
+              <h5><span className="badge badge-pill" id="sr">{this.props.flrIs}</span></h5>
             </div>
             <br/><br/>
             <div className="deux">
@@ -74,14 +74,14 @@ class Filiere extends Component {
             <div className="img1">
               <h3>ARTICULATION DE LA FILIERE AVEC LES FORMATIONS DISPENSES AU NIVEAU DE L'UNIVERSITE ET AU DE L'ETABLISSEMENT</h3>
               <div className="images">
-                <img src={img1} alt="photo" className="im1"/>
+                <img src={img1} alt="" className="im1"/>
               </div>
             </div>
             <br/><br/>
             <div className="img2">
               <h3>DESCRIPTION DE LA FORMATION </h3>
               <div className="images">
-                <img src={img2} alt="photo" className="im2"/>
+                <img src={img2} alt="" className="im2"/>
               </div>
             </div>
             <div className="cFiliere">
