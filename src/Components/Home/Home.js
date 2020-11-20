@@ -3,6 +3,7 @@ import './Home.css';
 import Annonce from '../Annonce/Annonce'
 import SideBar from '../SideBar/sideBar'
 import AvisContainer from '../Avis/avisContainer/avisContainer'
+import About from '../About/about'
 
 
 class Home extends Component {
@@ -21,7 +22,7 @@ class Home extends Component {
             <SideBar id="sidebar"/>
             <Annonce id="annonce"/> 
             <AvisContainer id="avis"/>
-            <div id="about"></div>
+            <About/>
         </div>
       </div>
     )

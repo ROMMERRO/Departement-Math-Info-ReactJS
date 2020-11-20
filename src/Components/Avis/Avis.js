@@ -1,10 +1,40 @@
 import React from 'react';
-
+import AvisWidget from './avisWidget/avisWidget'
+import './Avis.css'
 
 
 
 export default function Avis() {
     return (
-        <h1>Welcome! this is Avis page</h1>
+        <div className="Avis-Container">
+            <>
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+                <AvisWidget  />
+            </>
+        </div>
     )
 }
